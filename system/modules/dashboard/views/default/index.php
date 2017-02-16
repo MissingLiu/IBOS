@@ -15,6 +15,7 @@ use application\core\utils\Ibos;
             <link rel="stylesheet" href="<?php echo STATICURL; ?>/css/iefix.css?<?php echo VERHASH; ?>">
         <![endif]-->
         <!-- private css -->
+        <link rel="stylesheet" href="<?php echo $assetUrl; ?>/css/animate.css?<?php echo VERHASH; ?>">
         <link rel="stylesheet" href="<?php echo $assetUrl; ?>/css/index.css?<?php echo VERHASH; ?>">
         <link rel="stylesheet" href="<?php echo STATICURL; ?>/js/lib/artDialog/skins/ibos.css?<?php echo VERHASH; ?>">
     </head>
