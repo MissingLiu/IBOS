@@ -20,7 +20,7 @@
                 <img id="bg" src="<?php echo $assetUrl; ?>/image/bg_body.jpg" alt="" style="display:none;">
             </div>
             <div class="mainer">
-                <div class="login-wrap animated fadeInDown">
+                <div class="login-wrap animated fadeIn">
                     <h1 class="logo">
                         <img src="<?php echo $assetUrl; ?>/image/logo.png" width="300" height="80" alt="IBOS">
                     </h1>
