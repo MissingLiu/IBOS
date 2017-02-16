@@ -27,7 +27,6 @@ use application\core\utils\Ibos;
             adjustSidebarWidth();
             window.onresize = adjustSidebarWidth;
         </script>
-<!--        --><?php //var_dump($cateConfig);die;?>
         <div style="margin-top: 100px;">
         <ul class="nav metismenu">
             <?php foreach ($cateConfig as $key => $value):?>
