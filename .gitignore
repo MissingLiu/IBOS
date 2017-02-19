@@ -7,6 +7,13 @@ themes/classic/views/
 /data/backup
 /data/runtime
 /data/temp
+/data/org
+system/config
 data/aes.key
 data/install.lock
-!system/config
+/static
+!/static/css
+!/static/js
+!/static/font
+!/static/login
+!/static/office

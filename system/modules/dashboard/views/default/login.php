@@ -11,6 +11,7 @@
             <link rel="stylesheet" href="<?php echo STATICURL; ?>/css/iefix.css?<?php echo VERHASH; ?>">
         <![endif]-->
         <!-- private css -->
+        <link rel="stylesheet" href="<?php echo $assetUrl; ?>/css/animate.css?<?php echo VERHASH; ?>">
         <link rel="stylesheet" href="<?php echo $assetUrl; ?>/css/login.css?<?php echo VERHASH; ?>">
     </head>
     <body>
@@ -19,7 +20,7 @@
                 <img id="bg" src="<?php echo $assetUrl; ?>/image/bg_body.jpg" alt="" style="display:none;">
             </div>
             <div class="mainer">
-                <div class="login-wrap">
+                <div class="login-wrap animated fadeIn">
                     <h1 class="logo">
                         <img src="<?php echo $assetUrl; ?>/image/logo.png" width="300" height="80" alt="IBOS">
                     </h1>
