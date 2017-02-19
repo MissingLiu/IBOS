@@ -11,3 +11,9 @@ themes/classic/views/
 system/config
 data/aes.key
 data/install.lock
+/static
+!/static/css
+!/static/js
+!/static/font
+!/static/login
+!/static/office
