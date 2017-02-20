@@ -15,6 +15,7 @@ use application\core\utils\Ibos;
             <link rel="stylesheet" href="<?php echo STATICURL; ?>/css/iefix.css?<?php echo VERHASH; ?>">
         <![endif]-->
         <!-- private css -->
+        <link rel="stylesheet" href="<?php echo $assetUrl; ?>/font-awesome/css/font-awesome.css?<?php echo VERHASH; ?>">
         <link rel="stylesheet" href="<?php echo $assetUrl; ?>/css/animate.css?<?php echo VERHASH; ?>">
         <link rel="stylesheet" href="<?php echo $assetUrl; ?>/css/index.css?<?php echo VERHASH; ?>">
         <link rel="stylesheet" href="<?php echo $assetUrl; ?>/css/style.css?<?php echo VERHASH; ?>">
@@ -78,6 +79,7 @@ use application\core\utils\Ibos;
                         <?php foreach ($cateConfig as $key => $value):?>
                             <li>
                                 <a href="#">
+                                    <i class="fa fa-th-large"></i>
                                     <span class="nav-label"><?php echo $lang[$value['lang']];?></span>
                                     <span class="fa arrow"></span>      
                                 </a>

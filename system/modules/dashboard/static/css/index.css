@@ -207,7 +207,10 @@ ul{
 	position: relative;
 }
 
-.main-nav li a{
+.nav>li{
+	position: relative;
+}
+/*.main-nav li a{
 	display: block;
 	width: 80px;
 	height: 80px;
@@ -253,7 +256,7 @@ ul{
 	padding-left: 30px;
 	color: #BBBCBF;
 	font-size: 12px;
-}
+}*/
 
 .db-widen .logo,
 .db-widen .aside{

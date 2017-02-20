@@ -34,20 +34,20 @@
 	// window.onload = window.onresize = adjustLayout;
 
 	//展开网站地图
-	$("#logo").on("click", function(evt){
-		var that = $(this);
-		if($(this).hasClass("active")){
-			$("#db_map").slideUp(200, function(){
-				that.removeClass("active");
-			});
-		}else{
-			$("#db_map").slideDown(200);
-			$(this).addClass("active")
-		}
-		evt.stopPropagation();
-	})
-	$(document).on("click", function(){
-		$("#db_map").hide(0);
-		$("#logo").removeClass("active");
-	})
+	// $("#logo").on("click", function(evt){
+	// 	// var that = $(this);
+	// 	// if($(this).hasClass("active")){
+	// 	// 	$("#db_map").slideUp(200, function(){
+	// 	// 		that.removeClass("active");
+	// 	// 	});
+	// 	// }else{
+	// 	// 	$("#db_map").slideDown(200);
+	// 	// 	$(this).addClass("active")
+	// 	// }
+	// 	// evt.stopPropagation();
+	// })
+	// $(document).on("click", function(){
+	// 	$("#db_map").hide(0);
+	// 	$("#logo").removeClass("active");
+	// })
 })()

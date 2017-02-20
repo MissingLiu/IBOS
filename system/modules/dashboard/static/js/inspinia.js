@@ -17,11 +17,11 @@ $(document).ready(function () {
     $('#side-menu').metisMenu();
 
     // Minimalize menu 左栏导航栏切换按钮初始化
-    // $('.navbar-minimalize').click(function () {
-    //     $("body").toggleClass("mini-navbar");
-    //     SmoothlyMenu();
+    $('#logo').click(function () {
+        $("body").toggleClass("mini-navbar");
+        SmoothlyMenu();
 
-    // });
+    });
 
     // Full height of sidebar
     function fix_height() {
@@ -29,13 +29,12 @@ $(document).ready(function () {
 
         var navbarHeigh = $('nav.navbar-default').height();
         var wrapperHeigh = $('#page-wrapper').height();
-
         if (navbarHeigh > wrapperHeigh) {
             $('#page-wrapper').css("min-height", navbarHeigh + "px");
         }
 
         if (navbarHeigh < wrapperHeigh) {
-            $('#page-wrapper').css("min-height", $(window).height() + "px");
+            $('#page-wrapper').css("height", '100%');
         }
 
         if ($('body').hasClass('fixed-nav')) {
@@ -89,6 +88,7 @@ $(window).bind("resize", function () {
 // Set proper body class and plugins based on user configuration
 $(document).ready(function () {
     if (localStorageSupport) {
+        debugger;
         var collapse = localStorage.getItem("collapse_menu");
         var fixedsidebar = localStorage.getItem("fixedsidebar");
         var fixednavbar = localStorage.getItem("fixednavbar");
@@ -135,6 +135,7 @@ $(document).ready(function () {
 
 // check if browser support HTML5 local storage
 function localStorageSupport() {
+    debugger;
     return (('localStorage' in window) && window['localStorage'] !== null);
 }
 
