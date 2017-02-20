@@ -12,13 +12,6 @@
  * Framework
  */
 (function(){
-	var adjustMainerHeight = function(){
-		var height = (window.innerHeight||document.documentElement.clientHeight) - 50;
-		Dom.byId("mainer").style.height = height + "px"
-	}
-	adjustMainerHeight();
-	$(window).resize(adjustMainerHeight)
-
 	/**
 	 * 调整布局宽高以适应屏幕
 	 * @method adjustLayout
@@ -39,24 +32,6 @@
 	// }
 
 	// window.onload = window.onresize = adjustLayout;
-
-	function showNav(){
-		var el = $(this),
-			//当前活动元素为a标签时，active加在其父节点li上
-			item = el.is("a") ? el.parent() : el,
-			list = $(el.data("href"));
-		// if(item.hasClass("active")){
-		// 	return false;
-		// }
-		item.addClass("active").siblings().removeClass("active");
-		if(list.length){
-			list.show().siblings().hide();
-			$("a", list).eq(0).trigger("click");
-		}
-	}
-
-	$("#main_nav").find("a").on("click", showNav);
-	$("#sub_nav").find("a").on("click", showNav);
 
 	//展开网站地图
 	$("#logo").on("click", function(evt){
