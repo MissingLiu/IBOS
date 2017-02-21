@@ -88,7 +88,6 @@ $(window).bind("resize", function () {
 // Set proper body class and plugins based on user configuration
 $(document).ready(function () {
     if (localStorageSupport) {
-        debugger;
         var collapse = localStorage.getItem("collapse_menu");
         var fixedsidebar = localStorage.getItem("fixedsidebar");
         var fixednavbar = localStorage.getItem("fixednavbar");
@@ -135,7 +134,6 @@ $(document).ready(function () {
 
 // check if browser support HTML5 local storage
 function localStorageSupport() {
-    debugger;
     return (('localStorage' in window) && window['localStorage'] !== null);
 }
 
