@@ -16,6 +16,7 @@ use application\modules\user\utils\User;
 		<link rel="stylesheet" href="<?php echo STATICURL; ?>/css/iefix.css?<?php echo VERHASH; ?>">
 		<![endif]-->
 		<link rel="stylesheet" href="<?php echo $this->getAssetUrl(); ?>/css/common.css?<?php echo VERHASH; ?>">
+		<link rel="stylesheet" href="<?php echo $this->getAssetUrl(); ?>/css/animate.css?<?php echo VERHASH; ?>">
 		<link rel="stylesheet" href="<?php echo STATICURL; ?>/js/lib/zTree/css/ibos/ibos.css?<?php echo VERHASH; ?>" />
 		<link rel="stylesheet" href="<?php echo STATICURL; ?>/js/lib/Select2/select2.css?<?php echo VERHASH; ?>" />
 		<link rel="stylesheet" href="<?php echo STATICURL; ?>/js/lib/artDialog/skins/ibos.css?<?php echo VERHASH; ?>" />

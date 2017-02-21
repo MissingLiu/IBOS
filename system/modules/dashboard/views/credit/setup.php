@@ -13,12 +13,12 @@
 			</li>
 		</ul>
 	</div>
-	<form action="<?php echo $this->createUrl( 'credit/setup' ); ?>" method="post" class="form-horizontal">
-		<div>
+	<form action="<?php echo $this->createUrl( 'credit/setup' ); ?>" method="post" class="form-horizontal animated fadeInRight">
+		<div class="col-lg-7">
 			<!-- 扩展积分设置 start -->
 			<div class="ctb">
 				<h2 class="st"><?php echo $lang['Expand credit setup']; ?></h2>
-				<table class="point-table table table-bordered table-striped table-operate" id="point_setup_table">
+				<table class="table table-bordered table-striped table-operate" id="point_setup_table">
 					<thead>
 						<tr>
 							<th><?php echo $lang['Credit name']; ?></th>
@@ -72,12 +72,12 @@
 					</div>
 				</div>
 			</div>
+			<div>
+				<input type="hidden" name="removeId" id="removeId" />
+				<button class="btn btn-primary btn-large btn-submit" name="creditSetupSubmit" value="1" type="submit"><?php echo $lang['Submit'] ?></button>
+			</div>
+			<img id="loading_img" style="display:none;" src='<?php echo STATICURL ?>/image/common/loading.gif'/>
 		</div>
-		<div>
-			<input type="hidden" name="removeId" id="removeId" />
-			<button class="btn btn-primary btn-large btn-submit" name="creditSetupSubmit" value="1" type="submit"><?php echo $lang['Submit'] ?></button>
-		</div>
-		<img id="loading_img" style="display:none;" src='<?php echo STATICURL ?>/image/common/loading.gif'/>
 	</form>
 </div>
 <script type="text/template" id="ext_credit_tpl">

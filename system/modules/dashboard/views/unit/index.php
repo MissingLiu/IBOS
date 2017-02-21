@@ -7,8 +7,8 @@
 		<!-- 企业信息 start -->
 		<div class="ctb">
 			<h2 class="st"><?php echo $lang['Enterprise info'] ?></h2>
-			<div class="">
-				<form action="<?php echo $this->createUrl( 'unit/index' ); ?>" method="post" enctype="multipart/form-data" class="enterprise-info-form form-horizontal">
+			<div class="animated fadeInRight">
+				<form action="<?php echo $this->createUrl( 'unit/index' ); ?>" method="post" enctype="multipart/form-data" class="col-lg-7 form-horizontal">
 					<div class="control-group">
 						<label class="control-label"><?php echo $lang['Enterprise logo'] ?></label>
 						<div class="controls">
