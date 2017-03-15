@@ -17,3 +17,6 @@ data/install.lock
 !/static/font
 !/static/login
 !/static/office
+.babelrc
+.flowconfig
+node_modules

@@ -926,9 +926,9 @@ Ibos.Event = function($ctx, type, flag){
 		var evtName = $.attr(this, "data-" + flag),
 			params = Ibos.app.getEvtParams(this);
 		that.fire(evtName, params, $(this), evt);
-	})
+	});
 	this._evts = {};
-}
+};
 
 Ibos.Event.prototype = {
 	constructor: Ibos.Event,

@@ -1,3 +1,4 @@
+// @flow
 $(function() {
     var Call = {
         formValidator: function(type, param) {
